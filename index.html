@@ -42,7 +42,8 @@
 
   .app {
     width: 100%; max-width: 480px;
-    min-height: 100dvh;
+    height: 100dvh;
+    overflow: hidden;
     background: var(--navy);
     display: flex; flex-direction: column;
     position: relative;
@@ -89,17 +90,17 @@
 
   .name-block { text-align: center; margin-bottom: 30px; }
   .name-block .lab { font-size: 13px; color: var(--label); letter-spacing: .12em; }
-  .name-block .val { font-size: 31px; font-weight: 700; letter-spacing: .18em; margin-top: 8px; color: var(--val); }
+  .name-block .val { font-size: 20px; font-weight: 700; letter-spacing: .18em; margin-top: 8px; color: var(--val); }
 
   .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px 16px; text-align: center; margin-bottom: 30px; }
   .grid .lab { font-size: 13px; color: var(--label); letter-spacing: .08em; }
-  .grid .val { font-size: 21px; font-weight: 700; margin-top: 8px; color: var(--val); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+  .grid .val { font-size: 15px; font-weight: 700; margin-top: 8px; color: var(--val); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
 
   .footer { padding-top: 6px; display: flex; align-items: flex-end; gap: 14px; }
-  .footer .text { flex: 1; min-width: 0; font-size: 14.5px; line-height: 1.75; }
+  .footer .text { flex: 1; min-width: 0; font-size: 11.5px; line-height: 1.75; }
   .footer .text .cert { margin: 0 0 12px; }
   .footer .text .addr { margin: 0; color: #2b2f36; }
-  .footer .text .issuer { margin: 6px 0 0; font-size: 20px; font-weight: 700; }
+  .footer .text .issuer { margin: 6px 0 0; font-size: 15px; font-weight: 700; }
 
   /* 印（本物の公印ではなく「見本」ダミー） */
   .seal {
